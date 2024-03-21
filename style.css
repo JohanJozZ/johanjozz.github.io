@@ -1,0 +1,264 @@
+:root {
+  --blue: #414f6b;
+  --white: #fefeff;
+  --gray: #4d4d4d;
+  --light-gray: #b0b4be;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'lato', Times, serif;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h1,
+h2 {
+  font-family: 'bebas';
+  font-weight: 400;
+}
+h1 {
+  font-size: 7em;
+}
+
+h2 {
+  font-size: 3em;
+  color: var(--blue);
+  text-shadow: 0px 1px 1px #aaaaaa;
+  display: flex;
+  align-items: center;
+}
+
+p {
+  padding: 0 10%;
+}
+
+.container {
+  padding: 0 20%;
+}
+
+.container-white {
+  margin: 5% 20%;
+  padding: 2% 3%;
+  background-color: #fefeff80;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 1em;
+  border: 2px solid #bcc3c6;
+  border-radius: 100%;
+}
+
+.number-title {
+  display: inline-block;
+  transform: translate(0, -12%);
+  margin-right: -35px;
+  font-size: 4em;
+  color: rgba(65, 79, 107, 0.5);
+  text-shadow: none;
+}
+
+.main {
+  background-image: url(assets/photo-1459666644539-a9755287d6b0.png);
+}
+.history {
+  background-image: url(assets/peak\ 2.png);
+}
+.climb {
+  background-image: url(assets/photo-1417021423914-070979c8eb34.png);
+}
+
+.Navbar {
+  display: flex;
+  padding: 0 20%;
+}
+
+.NavBarImage {
+  display: flex;
+  margin: 1.5%;
+}
+
+.Navbar ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.Navbar li {
+  height: 50px;
+}
+
+.Navbar a {
+  height: 80%;
+  margin: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-family: 'Lato';
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 0.9em;
+}
+.border-bottom {
+  border-bottom: solid 2px #fefeff;
+}
+.border-bottom-blue {
+  border-bottom: solid 2px #414f6b;
+}
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-70%, -50%);
+}
+
+.hero h1:last-child {
+  transform: translate(0, -30%);
+  /*Create a gradient for the blue Hero Text*/
+  background: linear-gradient(
+    180deg,
+    rgba(79, 79, 79, 1) 0%,
+    rgba(64, 79, 100, 1) 15%,
+    rgba(57, 71, 97, 1) 75%,
+    rgba(31, 38, 53, 1) 95%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.history nav {
+  background-color: var(--white);
+}
+
+.caroussel {
+  padding: 0 20%;
+  position: relative;
+  margin-top: auto;
+  background-color: rgba(65, 79, 107, 0.8);
+}
+
+.slides {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.caroussel-page {
+  min-width: 100%;
+  display: flex;
+  padding: 2% 0;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease-in;
+}
+
+.caroussel-item {
+  margin: 0 5px;
+}
+
+.caroussel-item img {
+  width: 100%;
+}
+
+.page-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2%;
+}
+.dot {
+  height: 10px;
+  width: 10px;
+  display: block;
+  background-color: rgba(254, 254, 255, 0.5);
+  border-radius: 100%;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.current {
+  background-color: rgba(254, 254, 255, 1);
+  transition: all 0.4s ease-in;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+  padding: 0 20%;
+}
+
+.climb-navbar {
+  padding: 0 20%;
+  background-color: var(--blue);
+  display: flex;
+}
+
+.navbar-link {
+  display: block;
+  padding: 0.5% 2%;
+  text-decoration: none;
+  color: var(--light-gray);
+  font-family: 'Oswald';
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.active-nav {
+  background-color: var(--light-gray);
+  color: var(--blue);
+}
+
+.active-nav::after {
+  display: block;
+  height: 1px;
+  width: 72px;
+  background: var(--blue);
+  content: '';
+}
+
+.schedule-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.schedule-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer {
+  margin-top: auto;
+  padding: 0 20%;
+  display: flex;
+  background-color: var(--blue);
+}
+
+.blue {
+  color: var(--blue);
+}
+.gray {
+  color: var(--gray);
+}
+.white {
+  color: var(--white);
+}
